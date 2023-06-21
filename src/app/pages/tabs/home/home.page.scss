@@ -1,0 +1,116 @@
+ion-header {
+  ion-toolbar {
+    ion-title {
+      letter-spacing: 0.5px;
+
+      h1 {
+        color: rgb(34, 35, 32);
+        text-transform: uppercase;
+      }
+
+    }
+  }
+}
+
+ion-content {
+  swiper {
+    margin: 5px;
+    padding: 5px;
+    height: 60%;
+    width: 100%;
+    position: relative;
+    left: -10;
+
+    img {
+      height: 85%;
+      width: 150%;
+      border-radius: 80px;
+      box-shadow: -1px 11px 13px -6px rgb(37, 34, 34);
+    }
+
+  }
+
+  ion-row {
+    height: 10vh;
+    margin: 2px;
+
+    ion-avatar {
+      height: 5vh;
+      width: 6vh;
+      position: relative;
+      top: -1px;
+    }
+
+    ion-label {
+      font-size: 0.65rem;
+      font-weight: normal !important;
+    }
+  }
+
+  ion-row {
+    ion-label {
+      font-weight: bold;
+    }
+
+    ion-label.heading {
+      font-size: 1rem;
+    }
+
+    ion-col {
+      align-self: center;
+    }
+  }
+
+  ion-list {
+    background: transparent;
+
+    ion-item-group {
+      margin-bottom: 2vh;
+    }
+  }
+
+
+  --padding-start: 2rem;
+  --padding-end: 1rem;
+  --background: white;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+
+
+  }
+
+  .list-header {
+
+    font-weight: 700;
+    color: #171616;
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+    margin-top: 2.5rem;
+
+  }
+
+  .food-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #515151;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+
+  }
+
+
+}

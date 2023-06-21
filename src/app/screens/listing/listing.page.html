@@ -1,0 +1,24 @@
+<ion-content>
+  <div class="header">
+    <h1>Menu</h1>
+    <div class="avatar">
+      <ion-img src="assets\imgs\001.jpg"></ion-img>
+    </div>
+  </div>
+  <!-- <app-searchbar></app-searchbar> -->
+  <app-searchbar></app-searchbar>
+  <!-- <div class="categories"></div>
+  <app-category-item *ngFor="let item of categories" [item]="item" ></app-category-item> -->
+  <ion-row class="ion-text-center category" *ngIf="categories.length > 0">
+    <div>
+      <div *ngFor="let category of categories">
+        <div align="center">
+          <ion-avatar slot="start">
+            <img [src]="category?.image" />
+          </ion-avatar>
+        </div>
+        <ion-label class="ion-text-wrap">{{category?.name}}</ion-label>
+      </div>
+    </div>
+  </ion-row>
+</ion-content>

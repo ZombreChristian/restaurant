@@ -1,0 +1,36 @@
+
+
+<ion-content>
+  <img src="../../../assets/background_signup.png" class="background-image">
+
+
+  <div class="background-filter">
+    <div class="shape"> <img src="../../assets/icon/shape.svg" /> </div>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>
+          <b>Veuillez vous inscrire</b>
+        </ion-card-title>
+
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item>
+
+          <ion-input placeholder="Adresse Email" [(ngModel)]="email" id="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" placeholder="Mot de passe" [(ngModel)]="password" id="password"></ion-input>
+        </ion-item>
+
+        <div class="bottom-section">
+          <ion-button (click)="signup()">Inscription </ion-button>
+          <span> <b>Vous avez deja un compte?</b> <a [routerLink]="['/login']"> <b>Connectez-vous!!!</b> </a></span>
+        </div>
+      </ion-card-content>
+
+    </ion-card>
+  </div>
+
+</ion-content>
